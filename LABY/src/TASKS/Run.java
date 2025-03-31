@@ -17,6 +17,7 @@ public class Run {
         System.out.println("4. Laboratorium 4");
         System.out.println("5. Laboratorium 5");
         System.out.println("6. Laboratorium 6");
+        System.out.println("7. Laboratorium 7");
         System.out.println("15. Zakończ program");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -37,8 +38,12 @@ public class Run {
                 MenuLab05RUN();
                 break;
             case 6:
-                //LAB6();
+                MenuLab06RUN();
                 break;
+            case 7:
+                MenuLab07RUN();
+                break;
+            case 8:
             case 15:
                 System.out.println("Program został zakonczony.");
                 System.exit(0);
@@ -46,6 +51,17 @@ public class Run {
             default:
                 System.out.println("Nieprawidłowa opcja.");
         }
+    }
+
+    private void MenuLab07RUN() {
+        TASKS.LAB07.MenuLab07 lab07 = new TASKS.LAB07.MenuLab07();
+        lab07.Uruchom();
+    }
+
+    private void MenuLab06RUN() {
+        TASKS.LAB06.zadania_domowe.MenuLab06 Lab06 = new TASKS.LAB06.zadania_domowe.MenuLab06();
+        Lab06.Uruchom();
+
     }
 
     private void MenuLab01RUN() {
