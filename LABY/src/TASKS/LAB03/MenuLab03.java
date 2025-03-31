@@ -21,19 +21,19 @@ public class MenuLab03 {
         switch (choice) {
             case 1:
                 Zadanie1RUN();
-                break;
+                Menu();
             case 2:
                 Zadanie2RUN();
-                break;
+                Menu();
             case 3:
                 Zadanie3RUN();
-                break;
+                Menu();
             case 4:
                 Zadanie4RUN();
-                break;
+                Menu();
             case 5:
                 Zadanie5RUN();
-                break;
+                Menu();
             case 6:
                 CloseProgramRUN();
             default:

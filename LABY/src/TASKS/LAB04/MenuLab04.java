@@ -25,32 +25,31 @@ public class MenuLab04 {
         switch (choice) {
             case 1:
                 zadanie1RUN();
-                break;
+                MENU();
             case 2:
                 zadanie2RUN();
-                break;
+                MENU();
             case 3:
                 zadanie3RUN();
-                break;
+                MENU();
             case 4:
                 Zadanie4RUN();
-                break;
+                MENU();
             case 10:
                 Zadanie4bRUN();
-                break;
+                MENU();
             case 5:
                 Zadanie5RUN();
-                break;
+                MENU();
             case 6:
                 Zadanie6RUN();
-                break;
+                MENU();
             case 7:
                 Zadanie7RUN();
-                break;
+                MENU();
             case 8:
                 System.out.println("Exiting...");
                 System.exit(0);
-                break;
             default:
                 System.out.println("Invalid choice. Please try again.");
                 MENU();

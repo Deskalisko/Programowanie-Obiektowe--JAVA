@@ -21,12 +21,12 @@ public class MenuLab02 {
         System.out.println("7. EXIT");
         int choice=input_data.InputInt();
         switch (choice){
-            case 1:Task01Run();break;
-            case 2:Task02Run();break;
-            case 3:Task03Run();break;
-            case 4:Task04Run();break;
-            case 5:Task05Run();break;
-            case 6:Task06Run();break;
+            case 1:Task01Run();Menu();
+            case 2:Task02Run();Menu();
+            case 3:Task03Run();Menu();
+            case 4:Task04Run();Menu();
+            case 5:Task05Run();Menu();
+            case 6:Task06Run();Menu();
             case 7:CloseProgramRun();
             default:
                 System.out.println("Błędne dane.Wybierz ponownie");

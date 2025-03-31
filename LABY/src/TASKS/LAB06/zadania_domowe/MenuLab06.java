@@ -19,16 +19,16 @@ public class MenuLab06 {
         switch (choice) {
             case 1:
                 Zadanie1RUN();
-                break;
+                Menu();
             case 2:
                 Zadanie2RUN();
-                break;
+                Menu();
             case 3:
                 Zadanie3RUN();
-                break;
+                Menu();
             case 4:
                 zarzadzanieFlotąPojazdówRUN();
-                break;
+                Menu();
             case 5:
                 System.out.println("Zakonczenie programu.");
                 System.exit(0);

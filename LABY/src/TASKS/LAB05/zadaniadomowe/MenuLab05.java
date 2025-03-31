@@ -20,20 +20,19 @@ public class MenuLab05 {
         switch (choice) {
             case 1:
                 zadanie1Run();
-                break;
+                Menu();
             case 2:
                 zadanie2Run();
-                break;
+                Menu();
             case 3:
                 zadanie3Run();
-                break;
+                Menu();
             case 4:
                 zadanie4Run();
-                break;
+                Menu();
             case 0:
                 System.out.println("Wyłączanie programu...");
                 System.exit(0);
-                break;
             default:
                 System.out.println("Nieprawidłowa opcja!");
                 Menu();
