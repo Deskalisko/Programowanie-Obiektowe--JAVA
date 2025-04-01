@@ -1,6 +1,6 @@
 package TASKS;
 
-import TASKS.LAB02.TASKS_lab02;
+import TASKS.LAB07.zadania_domowe.MenuLab07;
 
 import java.util.Scanner;
 
@@ -54,7 +54,7 @@ public class Run {
     }
 
     private void MenuLab07RUN() {
-        TASKS.LAB07.MenuLab07 lab07 = new TASKS.LAB07.MenuLab07();
+        MenuLab07 lab07 = new MenuLab07();
         lab07.Uruchom();
     }
 
