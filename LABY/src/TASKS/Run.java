@@ -1,6 +1,7 @@
 package TASKS;
-
 import TASKS.LAB07.zadania_domowe.MenuLab07;
+import TASKS.LAB08.ZadaniaDomowe.MenuLab08;
+
 
 import java.util.Scanner;
 
@@ -18,6 +19,8 @@ public class Run {
         System.out.println("5. Laboratorium 5");
         System.out.println("6. Laboratorium 6");
         System.out.println("7. Laboratorium 7");
+        System.out.println("8. Laboratorium 8");
+        System.out.println("9. Laboratorium 9");
         System.out.println("15. Zakończ program");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -44,6 +47,11 @@ public class Run {
                 MenuLab07RUN();
                 break;
             case 8:
+                MenuLab08RUN();
+                break;
+            case 9:
+                MenuLab09RUN();
+                break;
             case 15:
                 System.out.println("Program został zakonczony.");
                 System.exit(0);
@@ -51,6 +59,16 @@ public class Run {
             default:
                 System.out.println("Nieprawidłowa opcja.");
         }
+    }
+
+    private void MenuLab09RUN() {
+        TASKS.LAB09.ZadaniaDomowe.MenuLab09 lab09 = new TASKS.LAB09.ZadaniaDomowe.MenuLab09();
+        lab09.MENU();
+    }
+
+    private void MenuLab08RUN() {
+        MenuLab08 lab08 = new MenuLab08();
+        lab08.Uruchom();
     }
 
     private void MenuLab07RUN() {
