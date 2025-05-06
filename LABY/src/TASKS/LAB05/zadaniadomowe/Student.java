@@ -1,58 +1,70 @@
 package TASKS.LAB05.zadaniadomowe;
 
-/*Na podstawie zadania poprzedniego utwórz klasę Student,
-która posiada następujące pola: imię,
-nazwisko, nr_indeksu, nazwa specjalności, rok_studiow.
-Dla pól dobierz odpowiedni typ danych.
-Utwórz cztery przeciążenia konstruktorów dla tej klasy
-(każda wersja konstruktora powinna
- przyjmować przynajmniej jeden parametr - nie
-  tworzyć konstruktora pustego). Utwórz metodę
-wyświetlającą dane o studencie. Utwórz cztery obiekty
-klasy student, każdy korzystający z innego
-przeciążenia konstruktora podczas tworzenia obiektu.
-Dla każdego obiektu uruchom metodę
-wyświetlającą dane.*/
-
 public class Student {
     private Osoba osoba;
-    private int nrAlbumu;
-    private String specjalnosc;
+    private String Specjalnosc;
+    private int nrIndeks;
     private int rokStudiow;
 
-    //konstruktory
-
-    public Student(Osoba osoba, int nrAlbumu, String specjalnosc, int rokStudiow) {
+    public Student(Osoba osoba, String Specjalnosc, int nrIndeks, int rokStudiow) {
         this.osoba = osoba;
-        this.nrAlbumu = nrAlbumu;
-        this.specjalnosc = specjalnosc;
+        this.Specjalnosc = Specjalnosc;
+        this.nrIndeks = nrIndeks;
         this.rokStudiow = rokStudiow;
     }
 
-    //bez roku studiow
-    public Student(Osoba osoba, int nrAlbumu, String specjalnosc) {
+    public Student(Osoba osoba, String Specjalnosc, int nrIndeks) {
         this.osoba = osoba;
-        this.nrAlbumu = nrAlbumu;
-        this.specjalnosc = specjalnosc;
+        this.Specjalnosc = Specjalnosc;
+        this.nrIndeks = nrIndeks;
     }
-    //bez specjalnosci
-    public Student(Osoba osoba, int nrAlbumu, int rokStudiow) {
+
+    public Student(Osoba osoba) {
         this.osoba = osoba;
-        this.nrAlbumu = nrAlbumu;
-        this.rokStudiow = rokStudiow;
     }
-    //bez nrAlbumu
-    public Student(Osoba osoba, String specjalnosc, int rokStudiow) {
+
+    public Student(Osoba osoba, int nrIndeks, int rokStudiow) {
         this.osoba = osoba;
-        this.specjalnosc = specjalnosc;
+        this.nrIndeks = nrIndeks;
         this.rokStudiow = rokStudiow;
     }
 
-    public void wyswietlDane() {
+    public Osoba getOsoba() {
+        return osoba;
+    }
+
+    public void setOsoba(Osoba osoba) {
+        this.osoba = osoba;
+    }
+
+    public String getSpecjalnosc() {
+        return Specjalnosc;
+    }
+
+    public void setSpecjalnosc(String specjalnosc) {
+        Specjalnosc = specjalnosc;
+    }
+
+    public int getNrIndeks() {
+        return nrIndeks;
+    }
+
+    public void setNrIndeks(int nrIndeks) {
+        this.nrIndeks = nrIndeks;
+    }
+
+    public int getRokStudiow() {
+        return rokStudiow;
+    }
+
+    public void setRokStudiow(int rokStudiow) {
+        this.rokStudiow = rokStudiow;
+    }
+
+    public void wyswietl() {
         osoba.pokazDane();
-        System.out.println("Nr albumu: " + nrAlbumu);
-        System.out.println("Specjalnosc: " + specjalnosc);
+        System.out.println("Specjalnosc: " + Specjalnosc);
+        System.out.println("Nr Albumu: " + nrIndeks);
         System.out.println("Rok studiow: " + rokStudiow);
-        System.out.println();
     }
 }

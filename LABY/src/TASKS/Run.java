@@ -133,7 +133,7 @@ public class Run {
 
     private void MenuLab05RUN() {
         TASKS.LAB05.zadaniadomowe.MenuLab05 Lab05 = new TASKS.LAB05.zadaniadomowe.MenuLab05();
-        Lab05.Uruchom();
+        Lab05.Menu();
         
     }
 }

@@ -1,58 +1,48 @@
 package TASKS.LAB05.zadaniadomowe;
 
-import TASKS.LAB02.InputData;
+import java.util.Scanner;
 
 public class MenuLab05 {
-    public void Uruchom() {
-        Menu();
-    }
+    TasksLab05 tasks = new TasksLab05();
+    Scanner sc = new Scanner(System.in);
+    public void Menu() {
+        System.out.println("Wybierz zadanie:");
+        System.out.println("1. Zadanie 1");
+        System.out.println("2. Zadanie 2");
+        System.out.println("3. Zadanie 3");
+        System.out.println("4. Zadanie 4");
+        System.out.println("0. Wyjście");
 
-    private void Menu() {
-        InputData input= new InputData();
-        System.out.println("--- Menu ---");
-        System.out.println("1. Zadanie 1 ");
-        System.out.println("2. Zadanie 2 ");
-        System.out.println("3. Zadanie 3 ");
-        System.out.println("4. Zadanie 4 ");
-        System.out.println("0. Wyjście ");
-        System.out.print("Wybierz opcję: ");
-        int choice = input.InputInt();
+        int choice = sc.nextInt();
         switch (choice) {
-            case 1:
-                zadanie1Run();
-                Menu();
-            case 2:
-                zadanie2Run();
-                Menu();
-            case 3:
-                zadanie3Run();
-                Menu();
-            case 4:
-                zadanie4Run();
-                Menu();
-            case 0:
-                System.out.println("Wyłączanie programu...");
-                System.exit(0);
+            case 1: Task001Run();Menu();
+            case 2: Task002Run();Menu();
+            case 3: Task003Run();Menu();
+            case 4: Task004Run();Menu();
+            case 0: CloseProgramRun();break;
             default:
-                System.out.println("Nieprawidłowa opcja!");
-                Menu();
-                break;
+                System.out.println("Błędne dane. Wybierz ponownie");break;
         }
     }
 
-    private void zadanie4Run() {
-        TASKSLAB05.zadanie4();
+    private void CloseProgramRun() {
+        System.out.println("Zamykanie ...");
+        System.exit(0);
     }
 
-    private void zadanie3Run() {
-        TASKSLAB05.zadanie3();
+    private void Task004Run() {
+        tasks.Zadanie4();
     }
 
-    private void zadanie2Run() {
-        TASKSLAB05.zadanie2();
+    private void Task003Run() {
+        tasks.Zadanie3();
     }
 
-    private void zadanie1Run() {
-        TASKSLAB05.zadanie1();
+    private void Task002Run() {
+        tasks.Zadanie2();
+    }
+
+    private void Task001Run() {
+        tasks.Zadanie1();
     }
 }
